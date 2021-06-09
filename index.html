@@ -18,15 +18,18 @@
     </header>
     <section id="styling">
       <div
-        v-bind:class="{demo: true, active:boxASelected}"
+        class="demo"
+        :class="{ active:boxASelected}"
         @click="boxSelected('A')"
       ></div>
       <div
-        v-bind:class="{demo: true, second:boxBSelected}"
+        class="demo"
+        v-bind:class="{ second:boxBSelected}"
         @click="boxSelected('B')"
       ></div>
       <div
-        v-bind:class="{demo: true, third:boxCSelected}"
+        class="demo"
+        :class="{third:boxCSelected}"
         @click="boxSelected('C')"
       ></div>
     </section>
